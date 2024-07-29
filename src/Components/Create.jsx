@@ -11,7 +11,7 @@ const Create = () => {
     }
     const readvalues=()=>{
        console.log(Input) 
-       axios.post("http://localhost:3030/Create",Input,{headers:{"token":sessionStorage.getItem("token"),"Content-Type":"aaplication/json"}}).then(
+       axios.post("http://localhost:3030/Create",Input,{headers:{"token":sessionStorage.getItem("token"),"Content-Type":"aplication/json"}}).then(
         (response)=>{
             console.log(response)
 if (response.data.status== "success") {

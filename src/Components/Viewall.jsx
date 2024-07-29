@@ -4,12 +4,12 @@ import Navbar from './Navbar'
 
 const Viewall = () => {
     const[token,setToken]=useState(sessionStorage.getItem("token"))
-    const [data, setData] = useState([])
+    const [data, setData] = useState([ ])
 
     const fetchData=()=>{
         console.log(token)
-        axios.post("http://localhost:3030/Viewall",{},
-            {headers:{"token":token,"Content-Type":"aaplication/json"}
+        axios.post("http://localhost:3030/Viewall",{ },
+            {headers:{"token":token,"Content-Type":"aplication/json"}
     }).then(
         (response)=>{
             console.log(response.data)
