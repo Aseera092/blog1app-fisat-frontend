@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
-import Navbar from './Navbar'
+
 
 const Create = () => {
     const [Input, setInput] = useState({
@@ -26,7 +26,7 @@ if (response.data.status== "success") {
     }
     return (
         <div>
-            <Navbar/>
+         
 
             <div className="container">
                 <div className="row">
